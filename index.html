@@ -26,31 +26,43 @@
 
   <form id="form-habits">
     <div class="habits">
-      <div class="habit" >🏃🏽‍♂️</div>
-      <div class="habit" >💧</div>
-      <div class="habit" >🍎</div>
+      <div class="habit" data-name="run">🏃🏽‍♂️</div>
+      <div class="habit" data-name="water">💧</div>
+      <div class="habit" data-name="food">🍎</div>
+      <div class="habit" data-name="journal">📓</div>
+      <div class="habit" data-name="takePills">💊</div>
     </div>
 
-    <div class="days">
-      <div class="day">
-        <div>"03/01"</div>
-        <input type="checkbox" name="run"/>
-        <input type="checkbox" name="water"/>
-        <input type="checkbox" name="food"/>
-      </div>
 
-   <div class="days">
-      <div class="day">
-        <div>"04/01"</div>
-          <input type="checkbox" name="run"/>
-          <input type="checkbox" name="water"/>
-          <input type="checkbox" name="food"/> 
-      </div>
+    <div class="days"></div>
 
+    <div class="day"><div>02/01</div>
+      <input type="checkbox" name="run" value="01-02" checked=""/>
+      <input type="checkbox" name="water" value="01-02" undefined=""/>
+      <input type="checkbox" name="food" value="01-02" undefined=""/>
+      <input type="checkbox" name="journal" value="01-02" checked=""/>
+      <input type="checkbox" name="takePills" value="01-02" false=""/>
+    </div>
+    <div class="day"><div>03/01</div>
+      <input type="checkbox" name="run" value="01-03" false=""/>
+      <input type="checkbox" name="water" value="01-03" undefined=""/>
+      <input type="checkbox" name="food" value="01-03" undefined=""/>
+      <input type="checkbox" name="journal" value="01-03" false=""/>
+      <input type="checkbox" name="takePills" value="01-03" checked=""/>
+    </div>
+    <div class="day"><div>06/01</div>
+      <input type="checkbox" name="run" value="01-06" checked=""/>
+      <input type="checkbox" name="water" value="01-06" undefined=""/>
+      <input type="checkbox" name="food" value="01-06" undefined=""/>
+      <input type="checkbox" name="journal" value="01-06" false=""/>
+      <input type="checkbox" name="takePills" value="01-06" false=""/>
     </div>
 
 
   </form>
+
+  <script src="https://cdn.jsdelivr.net/gh/maykbrito/libs/NLWSetup/source/NLWSetup.js"></script>
+  <script src="./script.js"></script>
 
 
 
